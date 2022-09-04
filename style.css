@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+/*----------------------------Navigation style--------------------------------------*/
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, red, red);
+  padding: 0 !important;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  color: #fff !important;
+  font-weight: 100;
+}
+
+.navbar-nav li a:hover {
+  font-weight: 600;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d04f4f;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(218, 71, 71);
+  font-weight: 600;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-weight: 600;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+/*----------------------------Navigation style end--------------------------------------*/
+
+
+
+
+
+/* -----------------------------------About style-------------------------- */
+.row,
+.col {
+  display: inline-block;
+  height: 40vh;
+  width: 100%;
+  background: blue;
+}
+
+.row h1 {
+  align-items: center;
+  padding: 70px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.col p {
+  color: #fff;
+  align-items: center;
+  padding: 50px;
+  margin-left: 20px;
+}
+
+
+/* --------------------------product--------------------------------------- */
+#product {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 270px;
+  margin: 60px;
+  border-radius: 15px;
+}
+
+.card-image {
+  height: 200px;
+  margin-bottom: 25px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.bat-1 {
+  background-image: url('bat1.png');
+}
+
+.bat-2 {
+  background-image: url('bat2.png');
+}
+
+.bat-3 {
+  background-image: url('bat3.png');
+}
+
+.card h2 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: black;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: all 1s ease;
+}
+
+/* ------------------------------------------services -------------------------------*/
+
+#services{
+  padding: 2px;
+  display: inline-flexbox;
+  background: gray;
+  text-align: center;
+  color: white;
+}
+.div1{
+  display: flex;
+  background-color: gray;
+width: 50%;
+float: left;
+}
+ .div2{
+  display: flex;
+  background-color: gray;
+  width: 50%;
+  float: right;
+}
+.service{
+  background-color: black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
+}
+.service:hover{
+  background-color: rgba(101, 99, 99, 0.63);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: all 1s ease;
+}
+
+
+/* --------------------------foooter-------------------------- */
+footer{
+  
+  width: 100%;
+  height: auto;
+   background: rgb(144, 141, 141); 
+   padding: 50px 100px;
+   color: rgb(0, 0, 0);
+}
+footer .lastsection{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .lastsection h2{
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer .lastsection .seclastsection p a{
+  color: greenyellow;
+}
+
+footer .lastsection h2::before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #ffeb3b;
+}
+footer .lastsection .address p{
+  color: black;
+  font-weight: 900;
+}
+
+/* ------------copyright---------------- */
+#copyright{
+  height: auto;
+  background: black;
+  text-align: center;
+  color: white;
+}
